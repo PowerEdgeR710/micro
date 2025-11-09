@@ -29,8 +29,8 @@ jobs:
           file: Dockerfile.deb13
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/micro:deb13
-            ghcr.io/${{ github.repository_owner }}/micro:latest-deb13
+            ghcr.io/poweredger710/micro:deb13
+            ghcr.io/poweredger710/micro:latest-deb13
 
       - name: Build & push Ubuntu 22 image
         uses: docker/build-push-action@v6
@@ -38,5 +38,5 @@ jobs:
           file: Dockerfile.ubuntu22
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/micro:ubuntu22
-            ghcr.io/${{ github.repository_owner }}/micro:latest-ubuntu22
+            ghcr.io/poweredger710/micro:ubuntu22
+            ghcr.io/poweredger710/micro:latest-ubuntu22
