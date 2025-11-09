@@ -29,7 +29,7 @@ jobs:
           file: Dockerfile.deb13
           push: true
           tags: |
-            ghcr.io/poweredger710/micro:deb13
+            ghcr.io/poweredger710/micro:deb13-1
             ghcr.io/poweredger710/micro:latest-deb13
 
       - name: Build & push Ubuntu 22 image
@@ -38,5 +38,14 @@ jobs:
           file: Dockerfile.ubuntu22
           push: true
           tags: |
-            ghcr.io/poweredger710/micro:ubuntu22
+            ghcr.io/poweredger710/micro:ubuntu22-1
+            ghcr.io/poweredger710/micro:latest-ubuntu22
+
+      - name: Build & push Ubuntu 24 image
+        uses: docker/build-push-action@v6
+        with:
+          file: Dockerfile.ubuntu2404
+          push: true
+          tags: |
+            ghcr.io/poweredger710/micro:ubuntu24-1
             ghcr.io/poweredger710/micro:latest-ubuntu22
