@@ -44,7 +44,7 @@ jobs:
       - name: Build & push Ubuntu 24 image
         uses: docker/build-push-action@v6
         with:
-          file: Dockerfile.ubuntu2404
+          file: Dockerfile.ubuntu24
           push: true
           tags: |
             ghcr.io/poweredger710/micro:ubuntu24-1
